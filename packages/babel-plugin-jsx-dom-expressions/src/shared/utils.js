@@ -11,13 +11,7 @@ export const reservedNameSpaces = new Set([
   "attr"
 ]);
 
-export const nonSpreadNameSpaces = new Set([
-  "class",
-  "style",
-  "use",
-  "prop",
-  "attr"
-]);
+export const nonSpreadNameSpaces = new Set(["class", "style", "use", "prop", "attr"]);
 
 export function getConfig(path) {
   return path.hub.file.metadata.config;
@@ -95,6 +89,8 @@ export function isDynamic(path, { checkMember, checkTags, checkCallExpressions =
     expr.leadingComments[0] &&
     expr.leadingComments[0].value.trim() === config.staticMarker
   ) {
+    if (expr.leadingComments[0].value.trim() === config.staticMarker)
+      console.log(`${config.staticMarker} is deprecated and will be removed in the future`);
     expr.leadingComments.shift();
     return false;
   }
@@ -369,7 +365,8 @@ export function convertJSXIdentifier(node) {
 }
 
 export function canNativeSpread(key, { checkNameSpaces } = {}) {
-  if (checkNameSpaces && key.includes(":") && nonSpreadNameSpaces.has(key.split(":")[0])) return false;
+  if (checkNameSpaces && key.includes(":") && nonSpreadNameSpaces.has(key.split(":")[0]))
+    return false;
   // TODO: figure out how to detect definitely function ref
   if (key === "ref") return false;
   return true;

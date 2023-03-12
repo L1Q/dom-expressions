@@ -7,7 +7,7 @@ import { ssr as _$ssr } from "r-server";
 const _tmpl$ = ['<a href="/" class="', '">Welcome</a>'],
   _tmpl$2 = ["<div>", "</div>"],
   _tmpl$3 = "<div><div/></div>",
-  _tmpl$4 = ["<div foo", ' style="', '"', ">", "</div>"],
+  _tmpl$4 = ["<div foo", "></div>"],
   _tmpl$5 = ['<div class="', '"></div>'],
   _tmpl$6 = ['<div style="', '">Hi</div>'],
   _tmpl$7 = ['<div style="', '" class="', '"></div>'],
@@ -75,13 +75,7 @@ const template2 = _$ssrElement(
   [_$ssr(_tmpl$2, _$escape(rowId)), _$ssr(_tmpl$2, _$escape(row.label)), _$ssr(_tmpl$3)],
   false
 );
-const template3 = _$ssr(
-  _tmpl$4,
-  _$ssrAttribute("id", _$escape(/*@once*/ state.id, true), false),
-  "background-color:" + _$escape(state.color, true),
-  _$ssrAttribute("name", _$escape(state.name, true), false),
-  _$escape(state.content)
-);
+const template3 = _$ssr(_tmpl$4, _$ssrAttribute("name", _$escape(state.name, true), false));
 const template4 = _$ssr(_tmpl$5, `hi ${_$escape(state.class, true) || ""} ccc:ddd`);
 const template5 = _$ssr(_tmpl$5, `a  b`);
 const template6 = _$ssr(_tmpl$6, _$ssrStyle(someStyle()));

@@ -29,10 +29,8 @@ const template2 = (
 
 const template3 = (
   <div
-    id={/*@once*/ state.id}
-    style={/*@once*/ { "background-color": state.color }}
+    foo
     name={state.name}
-    textContent={/*@once*/ state.content}
   />
 );
 

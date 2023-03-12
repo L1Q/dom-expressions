@@ -38,7 +38,6 @@ pluginTester({
         ]
       }
     ],
-    staticMarker: "@once",
     contextToCustomElements: true,
     wrapConditionals: true
   },

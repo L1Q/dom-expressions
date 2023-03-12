@@ -109,9 +109,6 @@ const template2 = (() => {
 })();
 const template3 = (() => {
   const _el$9 = _$getNextElement(_tmpl$3);
-  _$setAttribute(_el$9, "id", state.id);
-  _el$9.style.setProperty("background-color", state.color);
-  _el$9.textContent = state.content;
   _$effect(() => _$setAttribute(_el$9, "name", state.name));
   return _el$9;
 })();

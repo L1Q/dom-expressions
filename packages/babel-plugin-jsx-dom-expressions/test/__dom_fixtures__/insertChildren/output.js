@@ -61,76 +61,68 @@ const template10 = _$createComponent(
 );
 const template11 = (() => {
   const _el$9 = _tmpl$2.cloneNode(true);
-  _$insert(_el$9, state.children);
+  _$insert(_el$9, children);
   return _el$9;
 })();
 const template12 = _$createComponent(Module, {
-  children: state.children
+  children: children
 });
 const template13 = (() => {
   const _el$10 = _tmpl$2.cloneNode(true);
-  _$insert(_el$10, children);
+  _$insert(_el$10, () => dynamic.children);
   return _el$10;
 })();
 const template14 = _$createComponent(Module, {
-  children: children
-});
-const template15 = (() => {
-  const _el$11 = _tmpl$2.cloneNode(true);
-  _$insert(_el$11, () => dynamic.children);
-  return _el$11;
-})();
-const template16 = _$createComponent(Module, {
   get children() {
     return dynamic.children;
   }
 });
-const template18 = (() => {
-  const _el$12 = _tmpl$4.cloneNode(true);
-  _$insert(_el$12, children, null);
-  return _el$12;
+const template15 = (() => {
+  const _el$11 = _tmpl$4.cloneNode(true);
+  _$insert(_el$11, children, null);
+  return _el$11;
 })();
-const template19 = _$createComponent(Module, {
+const template16 = _$createComponent(Module, {
   get children() {
     return ["Hi ", children];
   }
 });
-const template20 = (() => {
-  const _el$13 = _tmpl$2.cloneNode(true);
-  _$insert(_el$13, children);
-  return _el$13;
+const template17 = (() => {
+  const _el$12 = _tmpl$2.cloneNode(true);
+  _$insert(_el$12, children);
+  return _el$12;
 })();
-const template21 = _$createComponent(Module, {
+const template18 = _$createComponent(Module, {
   get children() {
     return children();
   }
 });
-const template22 = (() => {
-  const _el$14 = _tmpl$2.cloneNode(true);
-  _$insert(_el$14, () => state.children());
-  return _el$14;
+const template19 = (() => {
+  const _el$13 = _tmpl$2.cloneNode(true);
+  _$insert(_el$13, () => state.children());
+  return _el$13;
 })();
-const template23 = _$createComponent(Module, {
+const template20 = _$createComponent(Module, {
   get children() {
     return state.children();
   }
 });
-const template24 = (() => {
-  const _el$15 = _tmpl$5.cloneNode(true),
-    _el$16 = _el$15.firstChild;
-  _$spread(_el$15, dynamic, false, true);
-  _$insert(_el$15, () => dynamic.children, null);
-  return _el$15;
+const template21 = (() => {
+  const _el$14 = _tmpl$5.cloneNode(true),
+    _el$15 = _el$14.firstChild;
+  _$spread(_el$14, dynamic, false, true);
+  _$insert(_el$14, () => dynamic.children, null);
+  return _el$14;
 })();
 const tiles = [];
 tiles.push(_tmpl$6.cloneNode(true));
-const template25 = (() => {
-  const _el$18 = _tmpl$.cloneNode(true);
-  _$insert(_el$18, tiles);
-  return _el$18;
+const template22 = (() => {
+  const _el$17 = _tmpl$.cloneNode(true);
+  _$insert(_el$17, tiles);
+  return _el$17;
 })();
 const comma = (() => {
-  const _el$19 = _tmpl$.cloneNode(true);
-  _$insert(_el$19, () => (expression(), "static"));
-  return _el$19;
+  const _el$18 = _tmpl$.cloneNode(true);
+  _$insert(_el$18, () => (expression(), "static"));
+  return _el$18;
 })();

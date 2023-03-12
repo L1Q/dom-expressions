@@ -35,39 +35,35 @@ const template10 = _$createComponent(
     children: "Hello"
   })
 );
-const template11 = _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(state.children));
+const template11 = _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(children));
 const template12 = _$createComponent(Module, {
-  children: state.children
-});
-const template13 = _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(children));
-const template14 = _$createComponent(Module, {
   children: children
 });
-const template15 = _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(dynamic.children));
-const template16 = _$createComponent(Module, {
+const template13 = _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(dynamic.children));
+const template14 = _$createComponent(Module, {
   get children() {
     return dynamic.children;
   }
 });
-const template18 = _$ssr(_tmpl$4, _$ssrHydrationKey(), _$escape(children));
-const template19 = _$createComponent(Module, {
+const template15 = _$ssr(_tmpl$4, _$ssrHydrationKey(), _$escape(children));
+const template16 = _$createComponent(Module, {
   get children() {
     return ["Hi ", children];
   }
 });
-const template20 = _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(children()));
-const template21 = _$createComponent(Module, {
+const template17 = _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(children()));
+const template18 = _$createComponent(Module, {
   get children() {
     return children();
   }
 });
-const template22 = _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(state.children()));
-const template23 = _$createComponent(Module, {
+const template19 = _$ssr(_tmpl$2, _$ssrHydrationKey(), _$escape(state.children()));
+const template20 = _$createComponent(Module, {
   get children() {
     return state.children();
   }
 });
-const template24 = _$ssrElement(
+const template21 = _$ssrElement(
   "module",
   dynamic,
   () => ["Hi", "<!--#-->", _$escape(dynamic.children), "<!--/-->"],
@@ -75,5 +71,5 @@ const template24 = _$ssrElement(
 );
 const tiles = [];
 tiles.push(_$ssr(_tmpl$5, _$ssrHydrationKey()));
-const template25 = _$ssr(_tmpl$6, _$ssrHydrationKey(), _$escape(tiles));
+const template22 = _$ssr(_tmpl$6, _$ssrHydrationKey(), _$escape(tiles));
 const comma = _$ssr(_tmpl$6, _$ssrHydrationKey(), _$escape((expression(), "static")));

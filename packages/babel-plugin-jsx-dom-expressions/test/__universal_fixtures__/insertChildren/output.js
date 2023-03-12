@@ -62,77 +62,77 @@ const template10 = _$createComponent(
 );
 const template11 = (() => {
   const _el$11 = _$createElement("module");
-  _$insert(_el$11, state.children);
+  _$insert(_el$11, children);
   return _el$11;
 })();
 const template12 = _$createComponent(Module, {
-  children: state.children
+  children: children
 });
 const template13 = (() => {
   const _el$12 = _$createElement("module");
-  _$insert(_el$12, children);
+  _$insert(_el$12, () => dynamic.children);
   return _el$12;
 })();
 const template14 = _$createComponent(Module, {
-  children: children
-});
-const template15 = (() => {
-  const _el$13 = _$createElement("module");
-  _$insert(_el$13, () => dynamic.children);
-  return _el$13;
-})();
-const template16 = _$createComponent(Module, {
   get children() {
     return dynamic.children;
   }
 });
-const template18 = (() => {
-  const _el$14 = _$createElement("module"),
-    _el$15 = _$createTextNode(`Hi `);
-  _$insertNode(_el$14, _el$15);
-  _$insert(_el$14, children, null);
-  return _el$14;
+const template15 = (() => {
+  const _el$13 = _$createElement("module"),
+    _el$14 = _$createTextNode(`Hi `);
+  _$insertNode(_el$13, _el$14);
+  _$insert(_el$13, children, null);
+  return _el$13;
 })();
-const template19 = _$createComponent(Module, {
+const template16 = _$createComponent(Module, {
   get children() {
     return ["Hi ", children];
   }
 });
-const template20 = (() => {
-  const _el$16 = _$createElement("module");
-  _$insert(_el$16, children);
-  return _el$16;
+const template17 = (() => {
+  const _el$15 = _$createElement("module");
+  _$insert(_el$15, children);
+  return _el$15;
 })();
-const template21 = _$createComponent(Module, {
+const template18 = _$createComponent(Module, {
   get children() {
     return children();
   }
 });
-const template22 = (() => {
-  const _el$17 = _$createElement("module");
-  _$insert(_el$17, () => state.children());
-  return _el$17;
+const template19 = (() => {
+  const _el$16 = _$createElement("module");
+  _$insert(_el$16, () => state.children());
+  return _el$16;
 })();
-const template23 = _$createComponent(Module, {
+const template20 = _$createComponent(Module, {
   get children() {
     return state.children();
   }
 });
+const template21 = (() => {
+  const _el$17 = _$createElement("module"),
+    _el$18 = _$createTextNode(`Hi`);
+  _$insertNode(_el$17, _el$18);
+  _$spread(_el$17, dynamic, true);
+  _$insert(_el$17, () => dynamic.children, null);
+  return _el$17;
+})();
 const tiles = [];
 tiles.push(
   (() => {
-    const _el$18 = _$createElement("div");
-    _$insertNode(_el$18, _$createTextNode(`Test 1`));
-    return _el$18;
+    const _el$19 = _$createElement("div");
+    _$insertNode(_el$19, _$createTextNode(`Test 1`));
+    return _el$19;
   })()
 );
-const template24 = (() => {
-  const _el$20 = _$createElement("div");
-  _$insert(_el$20, tiles);
-  return _el$20;
+const template22 = (() => {
+  const _el$21 = _$createElement("div");
+  _$insert(_el$21, tiles);
+  return _el$21;
 })();
 const comma = (() => {
-  const _el$21 = _$createElement("div");
-  _$insert(_el$21, () => (expression(), "static"));
-  return _el$21;
+  const _el$22 = _$createElement("div");
+  _$insert(_el$22, () => (expression(), "static"));
+  return _el$22;
 })();

@@ -67,81 +67,73 @@ const template10 = _$createComponent(
 );
 const template11 = (() => {
   const _el$9 = _$getNextElement(_tmpl$2);
-  _$insert(_el$9, state.children);
+  _$insert(_el$9, children);
   return _el$9;
 })();
 const template12 = _$createComponent(Module, {
-  children: state.children
+  children: children
 });
 const template13 = (() => {
   const _el$10 = _$getNextElement(_tmpl$2);
-  _$insert(_el$10, children);
+  _$insert(_el$10, () => dynamic.children);
   return _el$10;
 })();
 const template14 = _$createComponent(Module, {
-  children: children
-});
-const template15 = (() => {
-  const _el$11 = _$getNextElement(_tmpl$2);
-  _$insert(_el$11, () => dynamic.children);
-  return _el$11;
-})();
-const template16 = _$createComponent(Module, {
   get children() {
     return dynamic.children;
   }
 });
-const template18 = (() => {
-  const _el$12 = _$getNextElement(_tmpl$4),
-    _el$13 = _el$12.firstChild,
-    [_el$14, _co$] = _$getNextMarker(_el$13.nextSibling);
-  _$insert(_el$12, children, _el$14, _co$);
-  return _el$12;
+const template15 = (() => {
+  const _el$11 = _$getNextElement(_tmpl$4),
+    _el$12 = _el$11.firstChild,
+    [_el$13, _co$] = _$getNextMarker(_el$12.nextSibling);
+  _$insert(_el$11, children, _el$13, _co$);
+  return _el$11;
 })();
-const template19 = _$createComponent(Module, {
+const template16 = _$createComponent(Module, {
   get children() {
     return ["Hi ", children];
   }
 });
-const template20 = (() => {
-  const _el$15 = _$getNextElement(_tmpl$2);
-  _$insert(_el$15, children);
-  return _el$15;
+const template17 = (() => {
+  const _el$14 = _$getNextElement(_tmpl$2);
+  _$insert(_el$14, children);
+  return _el$14;
 })();
-const template21 = _$createComponent(Module, {
+const template18 = _$createComponent(Module, {
   get children() {
     return children();
   }
 });
-const template22 = (() => {
-  const _el$16 = _$getNextElement(_tmpl$2);
-  _$insert(_el$16, () => state.children());
-  return _el$16;
+const template19 = (() => {
+  const _el$15 = _$getNextElement(_tmpl$2);
+  _$insert(_el$15, () => state.children());
+  return _el$15;
 })();
-const template23 = _$createComponent(Module, {
+const template20 = _$createComponent(Module, {
   get children() {
     return state.children();
   }
 });
-const template24 = (() => {
-  const _el$17 = _$getNextElement(_tmpl$5),
-    _el$18 = _el$17.firstChild,
-    _el$19 = _el$18.nextSibling,
-    [_el$20, _co$2] = _$getNextMarker(_el$19.nextSibling);
-  _$spread(_el$17, dynamic, false, true);
-  _$insert(_el$17, () => dynamic.children, _el$20, _co$2);
+const template21 = (() => {
+  const _el$16 = _$getNextElement(_tmpl$5),
+    _el$17 = _el$16.firstChild,
+    _el$18 = _el$17.nextSibling,
+    [_el$19, _co$2] = _$getNextMarker(_el$18.nextSibling);
+  _$spread(_el$16, dynamic, false, true);
+  _$insert(_el$16, () => dynamic.children, _el$19, _co$2);
   _$runHydrationEvents();
-  return _el$17;
+  return _el$16;
 })();
 const tiles = [];
 tiles.push(_$getNextElement(_tmpl$6));
-const template25 = (() => {
-  const _el$22 = _$getNextElement(_tmpl$);
-  _$insert(_el$22, tiles);
-  return _el$22;
+const template22 = (() => {
+  const _el$21 = _$getNextElement(_tmpl$);
+  _$insert(_el$21, tiles);
+  return _el$21;
 })();
 const comma = (() => {
-  const _el$23 = _$getNextElement(_tmpl$);
-  _$insert(_el$23, () => (expression(), "static"));
-  return _el$23;
+  const _el$22 = _$getNextElement(_tmpl$);
+  _$insert(_el$22, () => (expression(), "static"));
+  return _el$22;
 })();

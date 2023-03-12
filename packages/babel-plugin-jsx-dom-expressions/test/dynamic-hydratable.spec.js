@@ -48,8 +48,7 @@ pluginTester({
       }
     ],
     hydratable: true,
-    contextToCustomElements: true,
-    staticMarker: "@once"
+    contextToCustomElements: true
   },
   title: "Convert JSX",
   fixtures: path.join(__dirname, "__dom_hydratable_fixtures__"),
